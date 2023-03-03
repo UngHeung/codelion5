@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            background-color: #f2f2f2;
+            width: 150px;
+            height: 60px;
+
+            font-size: 25px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        div:not(:first-child) {
+            margin-top: 10px;
+        }
+
+        .box1 {
+            background-color: #343f50;
+            box-shadow: 0 0 0px 3px #000;
+
+            border-top: 3px solid #4a5568;
+            border-left: 3px solid #4a5568;
+
+            color: #fff
+        }
+
+        .box2 {
+            background: linear-gradient(135deg, rgb(141, 74, 246), rgb(54, 108, 241));
+            border-radius: 30px;
+            border: 5px dashed rgb(229, 213, 254);
+
+            color: #fff;
+        }
+
+        .box2-inline {
+            background: linear-gradient(135deg, rgb(141, 74, 246), rgb(54, 108, 241));
+            border-radius: 27px;
+
+            color: #fff;
+        }
+
+        .box2-outline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 30px;
+            border: 5px dashed rgb(229, 213, 254);
+            background-color: #fff;
+        }
+
+        .box3 {
+            background-color: #fff;
+            border: 3px solid #ececec;
+            border-radius: 0 30px 30px;
+            box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.2);
+
+            color: #343f50;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="box-wrap">
+        <div class="box1">Hello👋</div>
+        <div class="box2">Hello👋</div>
+        <div class="box2-outline">
+            <div class="box2-inline">Hello👋</div>
+        </div>
+        <div class="box3">Hello👋</div>
+    </section>
+</body>
+
+</html>
