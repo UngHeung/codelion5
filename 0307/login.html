@@ -17,15 +17,33 @@
         * {
             margin: 0;
             padding: 0;
+
+            font-family: "SpoqaHanSansNeo-Regular";
         }
 
         body {
-            font-family: "SpoqaHanSansNeo-Regular";
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            width: 0;
+            height: 0;
+
+            font-size: 0;
+        }
+
+        h2 {
+            font-size: 12px;
         }
 
         a {
             text-decoration: none;
             color: #767676;
+            font-weight: lighter;
         }
 
         .login-wrap {
@@ -35,22 +53,17 @@
             border: 1px solid #dbdbdb;
             border-radius: 5px;
             box-sizing: border-box;
-
             padding: 18px;
-        }
-
-        h1 {
-            font-size: 12px;
         }
 
         button {
             width: 318px;
             height: 40px;
             background-color: #711bff;
-            margin: 18px 0;
 
             border: none;
             border-radius: 4px;
+            margin: 18px 0;
 
             font-size: 12px;
             color: #fff;
@@ -62,14 +75,11 @@
 
         img {
             vertical-align: text-bottom;
+            object-position: 0 -1px;
         }
 
         button>img {
             object-position: 0 1px;
-        }
-
-        .userinfo-wrap img {
-            object-position: 0 -1px;
         }
 
         .userinfo-wrap {
@@ -93,18 +103,19 @@
 
 <body>
     <section class="login-wrap">
-        <h1>더 편리해진 위니브에 오신 것을 환영합니다.</h1>
+        <h1>로그인</h1>
+        <h2>더 편리해진 위니브에 오신 것을 환영합니다.</h2>
         <button>
-            <img src="img/weniv-logo.png" alt="" width="70px"> 로그인
+            <img src="img/weniv-logo.png" alt="로그인" width="70"> 로그인
         </button>
         <section class="userinfo-wrap">
             <div>
-                <img src="img/icon-lock.png" alt="" width="14px">
-                <a href="#" id="find-id">아이디</a> | <a href="#" id="find-pw">비밀번호 찾기</a>
+                <img src="img/icon-lock.png" alt="아이디, 비밀번호 찾기" width="14">
+                <a href="#">아이디</a> | <a href="#">비밀번호 찾기</a>
             </div>
             <div>
-                <img src="img/icon-user.png" alt="" width="14px">
-                <a href="">회원가입</a>
+                <img src="img/icon-user.png" alt="회원가입하러 가기" width="14">
+                <a href="#">회원가입</a>
             </div>
         </section>
     </section>
