@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            display: grid;
+
+            width: 800px;
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+        }
+
+        header,
+        footer,
+        section,
+        aside {
+            border: 5px solid #333;
+            box-sizing: border-box;
+        }
+
+        header,
+        footer {
+            line-height: 150px;
+        }
+
+        section,
+        aside {
+            line-height: 400px;
+        }
+
+        header {
+            background-color: rgb(133, 101, 223);
+            border-bottom: none;
+
+            grid-column: 1 / 5;
+            grid-row: 1 / 1;
+        }
+
+        section {
+            background-color: rgb(16, 143, 143);
+            border-right: none;
+
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+        }
+
+        aside {
+            background-color: rgb(255, 89, 52);
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+        }
+
+        footer {
+            background-color: rgb(92, 149, 248);
+            border-top: none;
+            grid-column: 1 / 5;
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <section>section</section>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</body>
+
+</html>

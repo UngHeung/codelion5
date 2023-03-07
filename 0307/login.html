@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'SpoqaHanSansNeo-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "SpoqaHanSansNeo-Regular";
+        }
+
+        a {
+            text-decoration: none;
+            color: #767676;
+        }
+
+        .login-wrap {
+            width: 350px;
+            height: 140px;
+
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+            padding: 18px;
+        }
+
+        h1 {
+            font-size: 12px;
+        }
+
+        button {
+            width: 318px;
+            height: 40px;
+            background-color: #711bff;
+            margin: 18px 0;
+
+            border: none;
+            border-radius: 4px;
+
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+
+            cursor: pointer;
+        }
+
+        img {
+            vertical-align: text-bottom;
+        }
+
+        button>img {
+            object-position: 0 1px;
+        }
+
+        .userinfo-wrap img {
+            object-position: 0 -1px;
+        }
+
+        .userinfo-wrap {
+            height: 16px;
+
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 100;
+            color: #767676;
+        }
+
+        .userinfo-wrap>div:nth-child(1) {
+            float: left;
+        }
+
+        .userinfo-wrap>div:nth-child(2) {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-wrap">
+        <h1>더 편리해진 위니브에 오신 것을 환영합니다.</h1>
+        <button>
+            <img src="img/weniv-logo.png" alt="" width="70px"> 로그인
+        </button>
+        <section class="userinfo-wrap">
+            <div>
+                <img src="img/icon-lock.png" alt="" width="14px">
+                <a href="#" id="find-id">아이디</a> | <a href="#" id="find-pw">비밀번호 찾기</a>
+            </div>
+            <div>
+                <img src="img/icon-user.png" alt="" width="14px">
+                <a href="">회원가입</a>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
+
+<!--
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.6667 7.33334H3.33333C2.59695 7.33334 2 7.93029 2 8.66667V13.3333C2 14.0697 2.59695 14.6667 3.33333 14.6667H12.6667C13.403 14.6667 14 14.0697 14 13.3333V8.66667C14 7.93029 13.403 7.33334 12.6667 7.33334Z"
+                        stroke="#767676" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M4.6665 7.33333V4.66666C4.6665 3.78261 5.01769 2.93476 5.64281 2.30964C6.26794 1.68452 7.11578 1.33333 7.99984 1.33333C8.88389 1.33333 9.73174 1.68452 10.3569 2.30964C10.982 2.93476 11.3332 3.78261 11.3332 4.66666V7.33333"
+                        stroke="#767676" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M13.3332 14V12.6667C13.3332 11.9594 13.0522 11.2811 12.5521 10.781C12.052 10.281 11.3737 10 10.6665 10H5.33317C4.62593 10 3.94765 10.281 3.44755 10.781C2.94746 11.2811 2.6665 11.9594 2.6665 12.6667V14"
+                    stroke="#767676" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.00016 7.33333C9.47292 7.33333 10.6668 6.13943 10.6668 4.66667C10.6668 3.19391 9.47292 2 8.00016 2C6.5274 2 5.3335 3.19391 5.3335 4.66667C5.3335 6.13943 6.5274 7.33333 8.00016 7.33333Z"
+                    stroke="#767676" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+
+-->
