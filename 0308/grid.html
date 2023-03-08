@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 실습</title>
+    <style>
+        .grid-wrap {
+            display: grid;
+            gap: 10px;
+
+            width: 500px;
+            height: 500px;
+        }
+
+        .blue {
+            background-color: blue;
+            grid-column: 1/4;
+            grid-row: 1/3;
+        }
+
+        .yellow {
+            background-color: gold;
+            grid-column: 4/6;
+            grid-row: 1/4;
+        }
+
+        .purple {
+            background-color: purple;
+            grid-column: 1/3;
+            grid-row: 3/4;
+        }
+
+        .orange {
+            background-color: orange;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .salmon {
+            background-color: salmon;
+            grid-column: 1/3;
+            grid-row: 4/6;
+        }
+
+        .green {
+            background-color: green;
+            grid-column: 3/6;
+            grid-row: 4/6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-wrap">
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="purple"></div>
+        <div class="orange"></div>
+        <div class="salmon"></div>
+        <div class="green"></div>
+    </div>
+</body>
+
+</html>

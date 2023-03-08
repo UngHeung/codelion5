@@ -1,0 +1,19 @@
+:root {
+    --font-h1: 1.4em;
+    --font-h2: 1.2em;
+    --font-h3: 1.1em;
+}
+
+* {
+    font-family: 'Hi Melody', cursive;
+    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
