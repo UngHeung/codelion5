@@ -1,0 +1,202 @@
+/* width */
+#box-width-100:checked~.preview-box {
+    width: 100px;
+}
+
+#box-width-500:checked~.preview-box {
+    width: 500px;
+}
+
+#box-width-700:checked~.preview-box {
+    width: 700px;
+}
+
+/* height */
+#box-height-100:checked~.preview-box {
+    height: 100px;
+}
+
+#box-height-500:checked~.preview-box {
+    height: 500px;
+}
+
+#box-height-700:checked~.preview-box {
+    height: 700px;
+}
+
+/* background-color */
+#box-color-palevioletred:checked~.preview-box {
+    background-color: palevioletred;
+}
+
+#box-color-royalblue:checked~.preview-box {
+    background-color: royalblue;
+}
+
+#box-color-gold:checked~.preview-box {
+    background-color: gold;
+}
+
+#box-color-rebeccapurple:checked~.preview-box {
+    background-color: rebeccapurple;
+}
+
+#box-color-greenyellow:checked~.preview-box {
+    background-color: greenyellow;
+}
+
+#box-color-orangered:checked~.preview-box {
+    background-color: orangered;
+}
+
+/* border-style */
+#box-border-none:checked~.preview-box {
+    border: none;
+}
+
+#box-border-solid:checked~.preview-box {
+    border: 10px solid #333333;
+}
+
+#box-border-dashed:checked~.preview-box {
+    border: 10px dashed #333333;
+}
+
+#box-border-dotted:checked~.preview-box {
+    border: 10px dotted #333333;
+}
+
+#box-border-groove:checked~.preview-box {
+    border: 10px groove #333333;
+}
+
+#box-border-ridge:checked~.preview-box {
+    border: 10px ridge #333333;
+}
+
+#box-border-inset:checked~.preview-box {
+    border: 10px inset #333333;
+}
+
+#box-border-outset:checked~.preview-box {
+    border: 10px outset #333333;
+}
+
+/* border-width */
+#box-border-10:checked~.preview-box {
+    border-width: 10px;
+}
+
+#box-border-30:checked~.preview-box {
+    border-width: 30px;
+}
+
+#box-border-50:checked~.preview-box {
+    border-width: 50px;
+}
+
+/* border-color */
+#box-border-none:checked~.preview-box {
+    border-color: none;
+}
+
+#box-border-palevioletred:checked~.preview-box {
+    border-color: palevioletred;
+}
+
+#box-border-royalblue:checked~.preview-box {
+    border-color: royalblue;
+}
+
+#box-border-gold:checked~.preview-box {
+    border-color: gold;
+}
+
+#box-border-rebeccapurple:checked~.preview-box {
+    border-color: rebeccapurple;
+}
+
+#box-border-greenyellow:checked~.preview-box {
+    border-color: greenyellow;
+}
+
+#box-border-orangered:checked~.preview-box {
+    border-color: orangered;
+}
+
+/* box-sizing */
+#box-counter-box:checked~.preview-box {
+    box-sizing: content-box;
+}
+
+#box-border-box:checked~.preview-box {
+    box-sizing: border-box;
+}
+
+/* box-shadow */
+/* x, y */
+#box-shadow-none:checked~.preview-box {
+    box-shadow: none;
+}
+
+#box-shadow-basic:checked~.preview-box {
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#box-shadow-x20:checked~.preview-box {
+    box-shadow: 20px 0 black;
+}
+
+#box-shadow-x40:checked~.preview-box {
+    box-shadow: 40px 0 black;
+}
+
+#box-shadow-y20:checked~.preview-box {
+    box-shadow: 0 20px black;
+}
+
+#box-shadow-y40:checked~.preview-box {
+    box-shadow: 0 40px black;
+}
+
+#box-shadow-xy20:checked~.preview-box {
+    box-shadow: 20px 20px black;
+}
+
+#box-shadow-xy40:checked~.preview-box {
+    box-shadow: 40px 40px black;
+}
+
+/* box-shadow */
+/* blur, spread */
+#box-shadow-blur10:checked~.preview-box {
+    box-shadow: 20px 20px 10px black;
+}
+
+#box-shadow-blur30:checked~.preview-box {
+    box-shadow: 20px 20px 30px black;
+}
+
+#box-shadow-blur50:checked~.preview-box {
+    box-shadow: 20px 20px 50px black;
+}
+
+#box-shadow-spread0:checked~.preview-box {
+    box-shadow: 20px 20px 0 0px black;
+}
+
+#box-shadow-spread1:checked~.preview-box {
+    box-shadow: 20px 20px 0 1px black;
+}
+
+#box-shadow-spread10:checked~.preview-box {
+    box-shadow: 20px 20px 0 10px black;
+}
+
+#box-shadow-b10s0:checked~.preview-box {
+    box-shadow: 20px 20px 10px 0 black;
+}
+
+#box-shadow-b10s10:checked~.preview-box {
+    box-shadow: 20px 20px 10px 10px black;
+}
