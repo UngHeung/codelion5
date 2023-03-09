@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 스타일</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/css_box.css">
+</head>
+
+<body>
+    <header>
+        <h1>박스 스타일 설정하기</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">메인으로</a></li>
+                <li><a href="css-box.html">박스 스타일</a></li>
+                <li><a href="css-box.html">텍스트 스타일</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="wrap">
+        <!-- width -->
+        <div>
+            <h2><code>width: </code></h2>
+            <h3>너비를 설정합니다.</h3>
+        </div>
+
+        <input type="radio" name="width" checked id="box-width-100">
+        <label for="box-width-100">
+            <code>100px;</code>
+        </label>
+
+        <input type="radio" name="width" id="box-width-500">
+        <label for="box-width-500">
+            <code>500px;</code>
+        </label>
+
+        <input type="radio" name="width" id="box-width-700">
+        <label for="box-width-700">
+            <code>700px;</code>
+        </label>
+
+        <!-- height -->
+        <div>
+            <h2><code>height: </code></h2>
+            <h3>높이를 설정합니다.</h3>
+        </div>
+
+        <input type="radio" name="height" checked id="box-height-100">
+        <label for="box-height-100">
+            <code>100px;</code>
+        </label>
+
+        <input type="radio" name="height" id="box-height-500">
+        <label for="box-height-500">
+            <code>500px;</code>
+        </label>
+
+        <input type="radio" name="height" id="box-height-700">
+        <label for="box-height-700">
+            <code>700px;</code>
+        </label>
+
+        <!-- background-color -->
+        <div>
+            <h2><code>background-color: </code></h2>
+            <h3>배경 색을 설정합니다.</h3>
+        </div>
+
+        <input type="radio" name="color" checked id="box-color-palevioletred">
+        <label for="box-color-palevioletred">
+            <code>palevioletred;</code>
+        </label>
+
+        <input type="radio" name="color" id="box-color-royalblue">
+        <label for="box-color-royalblue">
+            <code>royalblue;</code>
+        </label>
+
+        <input type="radio" name="color" id="box-color-gold">
+        <label for="box-color-gold">
+            <code>gold;</code>
+        </label>
+
+        <input type="radio" name="color" id="box-color-rebeccapurple">
+        <label for="box-color-rebeccapurple">
+            <code>rebeccapurple;</code>
+        </label>
+
+        <input type="radio" name="color" id="box-color-greenyellow">
+        <label for="box-color-greenyellow">
+            <code>greenyellow;</code>
+        </label>
+
+        <input type="radio" name="color" id="box-color-orangered">
+        <label for="box-color-orangered">
+            <code>orangered;</code>
+        </label>
+
+        <!-- border-style -->
+        <div>
+            <h2><code>border-style: </code></h2>
+            <h3>테두리 스타일을 설정합니다. 테두리 너비를 넓게 하고 확인해보세요!</h3>
+        </div>
+
+        <input type="radio" name="border-style" checked id="box-border-none">
+        <label for="box-border-none">
+            <code>none;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-solid">
+        <label for="box-border-solid">
+            <code>solid;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-dashed">
+        <label for="box-border-dashed">
+            <code>dashed;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-dotted">
+        <label for="box-border-dotted">
+            <code>dotted;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-groove">
+        <label for="box-border-groove">
+            <code>groove;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-ridge">
+        <label for="box-border-ridge">
+            <code>ridge;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-inset">
+        <label for="box-border-inset">
+            <code>inset;</code>
+        </label>
+
+        <input type="radio" name="border-style" id="box-border-outset">
+        <label for="box-border-outset">
+            <code>outset;</code>
+        </label>
+
+        <!-- border-width -->
+        <div>
+            <h2><code>border-width: </code></h2>
+            <h3>테두리 너비를 설정합니다. <strong>테두리가 없으면 적용되지 않습니다!</strong></h3>
+        </div>
+
+        <input type="radio" name="border-width" id="box-border-10">
+        <label for="box-border-10">
+            <code>10px;</code>
+        </label>
+
+        <input type="radio" name="border-width" id="box-border-30">
+        <label for="box-border-30">
+            <code>30px;</code>
+        </label>
+
+        <input type="radio" name="border-width" id="box-border-50">
+        <label for="box-border-50">
+            <code>50px;</code>
+        </label>
+
+        <!-- border-color -->
+        <div>
+            <h2><code>border-color: </code></h2>
+            <h3>테두리 색을 설정합니다. <strong>테두리가 없으면 적용되지 않습니다!</strong></h3>
+        </div>
+
+        <input type="radio" name="border-color" id="box-border-palevioletred">
+        <label for="box-border-palevioletred">
+            <code>palevioletred;</code>
+        </label>
+
+        <input type="radio" name="border-color" id="box-border-royalblue">
+        <label for="box-border-royalblue">
+            <code>royalblue;</code>
+        </label>
+
+        <input type="radio" name="border-color" id="box-border-gold">
+        <label for="box-border-gold">
+            <code>gold;</code>
+        </label>
+
+        <input type="radio" name="border-color" id="box-border-rebeccapurple">
+        <label for="box-border-rebeccapurple">
+            <code>rebeccapurple;</code>
+        </label>
+
+        <input type="radio" name="border-color" id="box-border-greenyellow">
+        <label for="box-border-greenyellow">
+            <code>greenyellow;</code>
+        </label>
+
+        <input type="radio" name="border-color" id="box-border-orangered">
+        <label for="box-border-orangered">
+            <code>orangered;</code>
+        </label>
+
+        <!-- box-sizing -->
+        <div>
+            <h2><code>box-sizing: </code></h2>
+            <h3>테두리의 너비를 박스 너비에 포함시킬지 여부를 설정합니다. 테두리를 넣고 설정해보세요!</h3>
+        </div>
+
+        <input type="radio" name="box-sizing" id="box-counter-box" checked>
+        <label for="box-counter-box">
+            <code>counter-box;</code>
+        </label>
+
+        <input type="radio" name="box-sizing" id="box-border-box">
+        <label for="box-border-box">
+            <code>border-box;</code>
+        </label>
+
+        <!-- box-shadow -->
+        <div>
+            <h2><code>box-shadow: </code></h2>
+            <h3>박스의 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
+        </div>
+
+        <input type="radio" name="box-shadow" id="box-shadow-none" checked>
+        <label for="box-shadow-none">
+            <code>none;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-basic">
+        <label for="box-shadow-basic">
+            <code>sample</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-x20">
+        <label for="box-shadow-x20">
+            <code>20px 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-x40">
+        <label for="box-shadow-x40">
+            <code>40px 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-y20">
+        <label for="box-shadow-y20">
+            <code>0 20px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-y40">
+        <label for="box-shadow-y40">
+            <code>0 40px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-xy20">
+        <label for="box-shadow-xy20">
+            <code>20px 20px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-xy40">
+        <label for="box-shadow-xy40">
+            <code>40px 40px black;</code>
+        </label>
+
+        <div>
+            <h3>세번째, 네번째 값은 blur, spread 값을 조절할 수 있습니다.</h3>
+        </div>
+
+        <input type="radio" name="box-shadow" id="box-shadow-blur10">
+        <label for="box-shadow-blur10">
+            <code>20px 20px 10px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-blur50">
+        <label for="box-shadow-blur50">
+            <code>20px 20px 50px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-spread0">
+        <label for="box-shadow-spread0">
+            <code>20px 20px 0 0px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-spread10">
+        <label for="box-shadow-spread10">
+            <code>20px 20px 0 10px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-b10s0">
+        <label for="box-shadow-b10s0">
+            <code>20px 20px 0 10px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-b10s10">
+        <label for="box-shadow-b10s10">
+            <code>20px 20px 0 10px black;</code>
+        </label>
+
+
+        <div class="preview-box"></div>
+    </section>
+</body>
+
+</html>
