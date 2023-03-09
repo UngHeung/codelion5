@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    color: #333;
+
+    font-family: monospace;
+}
+
+header {
+    width: calc(100vw - 15px);
+    height: 100px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .3);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 30px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 50vw;
+
+    list-style: none;
+}
+
+a {
+    position: relative;
+
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover::after {
+    position: absolute;
+    margin-left: 3px;
+
+    content: "<-";
+    font-size: 16px;
+
+    animation: blink 1s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    line-height: 70px;
+}
+
+h2 {
+    margin: 30px 15px 5px 15px;
+}
+
+h2:first-child {
+    margin-top: 30px;
+}
+
+h3 {
+    display: inline-block;
+    background-color: #ebebeb;
+    border-radius: 5px;
+
+    padding: 5px 15px;
+    margin: 15px 15px;
+}
+
+code {
+    background-color: #ebebeb;
+    border-radius: 5px;
+
+    padding: 5px 15px;
+
+    font-family: 'Courier New', Courier, monospace;
+    color: #333333;
+}
+
+code:not(h2>code) {
+    background-color: #333333;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #333333;
+}
+
+.wrap {
+    position: relative;
+
+    text-align: left;
+}
+
+.preview-box {
+    position: fixed;
+    top: 115px;
+    right: 5%;
+
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+
+    margin: 20px auto;
+
+    transition: .5s;
+    color: #fff;
+
+    z-index: -99;
+}
+
+.wrap>label {
+    display: inline-block;
+
+    transition: filter .3s;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.wrap>label:hover {
+    filter: brightness(90%);
+}
+
+.wrap>label:not(:first-child) {
+    margin-left: 15px;
+}
+
+.wrap>input {
+    display: none;
+}
+
+.wrap>input:checked+label>code {
+    background-color: #ebebeb;
+    color: #333333;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
