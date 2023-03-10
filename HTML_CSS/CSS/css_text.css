@@ -1,0 +1,54 @@
+/* font-size */
+#font-size-14:checked~.preview-text {
+    font-size: 14px;
+}
+
+#font-size-18:checked~.preview-text {
+    font-size: 18px;
+}
+
+#font-size-22:checked~.preview-text {
+    font-size: 22px;
+}
+
+/* font-weight */
+#font-weight-100:checked~.preview-text {
+    font-weight: 100;
+}
+
+#font-weight-300:checked~.preview-text {
+    font-weight: 300;
+}
+
+#font-weight-600:checked~.preview-text {
+    font-weight: 600;
+}
+
+#font-weight-900:checked~.preview-text {
+    font-weight: 900;
+}
+
+/* color */
+#font-color-palevioletred:checked~.preview-text {
+    color: palevioletred;
+}
+
+#font-color-royalblue:checked~.preview-text {
+    color: royalblue;
+}
+
+#font-color-gold:checked~.preview-text {
+    color: gold;
+}
+
+#font-color-rebeccapurple:checked~.preview-text {
+    color: rebeccapurple;
+}
+
+#font-color-greenyellow:checked~.preview-text {
+    color: greenyellow;
+}
+
+#font-color-orangered:checked~.preview-text {
+    color: orangered;
+}
