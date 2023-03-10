@@ -12,13 +12,13 @@
 
 <body>
     <header>
-        <h1>박스 스타일 설정하기</h1>
+        <h1>박스 스타일 PUZZLE</h1>
 
         <nav>
             <ul>
                 <li><a href="index.html">메인으로</a></li>
                 <li><a href="css-box.html">박스 스타일</a></li>
-                <li><a href="css-box.html">텍스트 스타일</a></li>
+                <li><a href="css-text.html">텍스트 스타일</a></li>
             </ul>
         </nav>
 
@@ -36,14 +36,14 @@
             <code>100px;</code>
         </label>
 
+        <input type="radio" name="width" id="box-width-300">
+        <label for="box-width-300">
+            <code>300px;</code>
+        </label>
+
         <input type="radio" name="width" id="box-width-500">
         <label for="box-width-500">
             <code>500px;</code>
-        </label>
-
-        <input type="radio" name="width" id="box-width-700">
-        <label for="box-width-700">
-            <code>700px;</code>
         </label>
 
         <!-- height -->
@@ -57,14 +57,14 @@
             <code>100px;</code>
         </label>
 
+        <input type="radio" name="height" id="box-height-300">
+        <label for="box-height-300">
+            <code>300px;</code>
+        </label>
+
         <input type="radio" name="height" id="box-height-500">
         <label for="box-height-500">
             <code>500px;</code>
-        </label>
-
-        <input type="radio" name="height" id="box-height-700">
-        <label for="box-height-700">
-            <code>700px;</code>
         </label>
 
         <!-- background-color -->
@@ -225,17 +225,12 @@
         <!-- box-shadow -->
         <div>
             <h2><code>box-shadow: </code></h2>
-            <h3>박스의 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
+            <h3>박스의 바깥 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
         </div>
 
         <input type="radio" name="box-shadow" id="box-shadow-none" checked>
         <label for="box-shadow-none">
             <code>none;</code>
-        </label>
-
-        <input type="radio" name="box-shadow" id="box-shadow-basic">
-        <label for="box-shadow-basic">
-            <code>sample</code>
         </label>
 
         <input type="radio" name="box-shadow" id="box-shadow-x20">
@@ -284,7 +279,7 @@
 
         <input type="radio" name="box-shadow" id="box-shadow-spread0">
         <label for="box-shadow-spread0">
-            <code>20px 20px 0 0px black;</code>
+            <code>20px 20px 0 0 black;</code>
         </label>
 
         <input type="radio" name="box-shadow" id="box-shadow-spread10">
@@ -294,15 +289,84 @@
 
         <input type="radio" name="box-shadow" id="box-shadow-b10s0">
         <label for="box-shadow-b10s0">
-            <code>20px 20px 0 10px black;</code>
+            <code>20px 20px 10px 0 black;</code>
         </label>
 
         <input type="radio" name="box-shadow" id="box-shadow-b10s10">
         <label for="box-shadow-b10s10">
-            <code>20px 20px 0 10px black;</code>
+            <code>20px 20px 10px 10px black;</code>
         </label>
 
+        <!-- box-shadow-inset -->
+        <div>
+            <h3>박스의 안쪽 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
+        </div>
 
+        <input type="radio" name="box-shadow" id="box-shadow-x20-inset">
+        <label for="box-shadow-x20-inset">
+            <code>inset 20px 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-x40-inset">
+        <label for="box-shadow-x40-inset">
+            <code>inset 40px 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-y20-inset">
+        <label for="box-shadow-y20-inset">
+            <code>inset 0 20px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-y40-inset">
+        <label for="box-shadow-y40-inset">
+            <code>inset 0 40px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-xy20-inset">
+        <label for="box-shadow-xy20-inset">
+            <code>inset 20px 20px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-xy40-inset">
+        <label for="box-shadow-xy40-inset">
+            <code>inset 40px 40px black;</code>
+        </label>
+
+        <div>
+            <h3>세번째, 네번째 값은 blur, spread 값을 조절할 수 있습니다.</h3>
+        </div>
+
+        <input type="radio" name="box-shadow" id="box-shadow-blur10-inset">
+        <label for="box-shadow-blur10-inset">
+            <code>inset 20px 20px 10px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-blur50-inset">
+        <label for="box-shadow-blur50-inset">
+            <code>inset 20px 20px 50px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-spread0-inset">
+        <label for="box-shadow-spread0-inset">
+            <code>inset 20px 20px 0 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-spread10-inset">
+        <label for="box-shadow-spread10-inset">
+            <code>inset 20px 20px 0 10px black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-b10s0-inset">
+        <label for="box-shadow-b10s0-inset">
+            <code>inset 20px 20px 10px 0 black;</code>
+        </label>
+
+        <input type="radio" name="box-shadow" id="box-shadow-b10s10-inset">
+        <label for="box-shadow-b10s10-inset">
+            <code>inset 20px 20px 10px 10px black;</code>
+        </label>
+
+        <!-- preview-box -->
         <div class="preview-box"></div>
     </section>
 </body>
