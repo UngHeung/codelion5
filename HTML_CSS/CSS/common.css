@@ -4,14 +4,14 @@
 }
 
 body {
-    font-size: 1em;
+    font-family: monospace;
     color: #333;
 
-    font-family: monospace;
+    overflow-x: hidden;
 }
 
 header {
-    width: calc(100vw - 15px);
+    width: 100vw;
     height: 100px;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .3);
 }
@@ -19,7 +19,6 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    align-items: start;
 
     height: 30px;
 }
@@ -37,7 +36,7 @@ ul {
 a {
     position: relative;
 
-    font-size: 14px;
+    font-size: 12px;
     color: #333;
     text-decoration: none;
 }
@@ -58,7 +57,7 @@ h1 {
 }
 
 h2 {
-    margin: 30px 15px 5px 15px;
+    margin: 30px 0 5px 0;
 }
 
 h2:first-child {
@@ -71,21 +70,26 @@ h3 {
     border-radius: 5px;
 
     padding: 5px 15px;
-    margin: 15px 15px;
+    margin: 15px 0;
 }
 
 code {
     background-color: #ebebeb;
     border-radius: 5px;
 
-    padding: 5px 15px;
+    padding: 5px 10px;
 
     font-family: 'Courier New', Courier, monospace;
-    color: #333333;
+    font-size: 12px;
+    color: #333;
+}
+
+h2>code {
+    font-size: 18px;
 }
 
 code:not(h2>code) {
-    background-color: #333333;
+    background-color: #333;
     color: #fff;
 }
 
@@ -95,34 +99,18 @@ code:not(h2>code) {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #333333;
+    background-color: #333;
 }
 
 ::-webkit-scrollbar-button {
-    background-color: #333333;
+    background-color: #333;
 }
 
 .wrap {
     position: relative;
+    margin: 15px;
 
     text-align: left;
-}
-
-.preview-box {
-    position: fixed;
-    top: 115px;
-    right: 5%;
-
-    width: 100px;
-    height: 100px;
-    background-color: #333;
-
-    margin: 20px auto;
-
-    transition: .5s;
-    color: #fff;
-
-    z-index: -99;
 }
 
 .wrap>label {
@@ -137,10 +125,6 @@ code:not(h2>code) {
     filter: brightness(90%);
 }
 
-.wrap>label:not(:first-child) {
-    margin-left: 15px;
-}
-
 .wrap>input {
     display: none;
 }
@@ -150,6 +134,7 @@ code:not(h2>code) {
     color: #333333;
 }
 
+/* animation */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -158,4 +143,38 @@ code:not(h2>code) {
     50% {
         opacity: 0;
     }
+}
+
+/* preview */
+/* box */
+.preview-box {
+    position: fixed;
+    top: 115px;
+    right: 5%;
+
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+
+    margin: 20px auto;
+
+    color: #fff;
+
+    transition: .5s;
+    z-index: -99;
+}
+
+/* text */
+.preview-text {
+    position: fixed;
+    top: 115px;
+    right: 5%;
+
+    border-radius: 5px;
+
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+
+    transition: .5s;
+    z-index: -99;
 }
