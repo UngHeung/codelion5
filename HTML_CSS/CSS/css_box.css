@@ -82,6 +82,23 @@
     border: 10px outset #333;
 }
 
+/* border-radius */
+#box-border-radius-0:checked~.preview-box {
+    border-radius: 0;
+}
+
+#box-border-radius-10:checked~.preview-box {
+    border-radius: 10px;
+}
+
+#box-border-radius-50:checked~.preview-box {
+    border-radius: 50px;
+}
+
+#box-border-radius-50p:checked~.preview-box {
+    border-radius: 50%;
+}
+
 /* border-width */
 #box-border-10:checked~.preview-box {
     border-width: 10px;

@@ -31,7 +31,7 @@
             <h3>너비를 설정합니다.</h3>
         </div>
 
-        <input type="radio" name="width" checked id="box-width-100">
+        <input type="radio" name="width" id="box-width-100" checked>
         <label for="box-width-100">
             <code>100px;</code>
         </label>
@@ -52,7 +52,7 @@
             <h3>높이를 설정합니다.</h3>
         </div>
 
-        <input type="radio" name="height" checked id="box-height-100">
+        <input type="radio" name="height" id="box-height-100" checked>
         <label for="box-height-100">
             <code>100px;</code>
         </label>
@@ -73,7 +73,7 @@
             <h3>배경 색을 설정합니다.</h3>
         </div>
 
-        <input type="radio" name="color" checked id="box-color-palevioletred">
+        <input type="radio" name="color" id="box-color-palevioletred" checked>
         <label for="box-color-palevioletred">
             <code>palevioletred;</code>
         </label>
@@ -109,7 +109,7 @@
             <h3>테두리 스타일을 설정합니다. 테두리 너비를 넓게 하고 확인해보세요!</h3>
         </div>
 
-        <input type="radio" name="border-style" checked id="box-border-none">
+        <input type="radio" name="border-style" id="box-border-none" checked>
         <label for="box-border-none">
             <code>none;</code>
         </label>
@@ -149,13 +149,39 @@
             <code>outset;</code>
         </label>
 
+        <!-- border-radius -->
+        <div>
+            <h2><code>border-radius: </code></h2>
+            <h3>테두리 모서리의 곡률을 설정합니다.</h3>
+        </div>
+
+        <input type="radio" name="border-radius" id="box-border-radius-0" checked>
+        <label for="box-border-radius-0">
+            <code>0;</code>
+        </label>
+
+        <input type="radio" name="border-radius" id="box-border-radius-10">
+        <label for="box-border-radius-10">
+            <code>10px;</code>
+        </label>
+
+        <input type="radio" name="border-radius" id="box-border-radius-50">
+        <label for="box-border-radius-50">
+            <code>50px;</code>
+        </label>
+
+        <input type="radio" name="border-radius" id="box-border-radius-50p">
+        <label for="box-border-radius-50p">
+            <code>50%;</code>
+        </label>
+
         <!-- border-width -->
         <div>
             <h2><code>border-width: </code></h2>
             <h3>테두리 너비를 설정합니다. <strong>테두리가 없으면 적용되지 않습니다!</strong></h3>
         </div>
 
-        <input type="radio" name="border-width" id="box-border-10">
+        <input type="radio" name="border-width" id="box-border-10" checked>
         <label for="box-border-10">
             <code>10px;</code>
         </label>
@@ -176,7 +202,7 @@
             <h3>테두리 색을 설정합니다. <strong>테두리가 없으면 적용되지 않습니다!</strong></h3>
         </div>
 
-        <input type="radio" name="border-color" id="box-border-palevioletred">
+        <input type="radio" name="border-color" id="box-border-palevioletred" checked>
         <label for="box-border-palevioletred">
             <code>palevioletred;</code>
         </label>
@@ -225,7 +251,7 @@
         <!-- box-shadow -->
         <div>
             <h2><code>box-shadow: </code></h2>
-            <h3>박스의 바깥쪽 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
+            <h3>바깥쪽 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
         </div>
 
         <input type="radio" name="box-shadow" id="box-shadow-none" checked>
@@ -299,7 +325,7 @@
 
         <!-- box-shadow-inset -->
         <div>
-            <h3>박스의 안쪽 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
+            <h3>안쪽 그림자를 설정합니다. 첫번째, 두번째 값은 x축 y축을 나타냅니다.</h3>
         </div>
 
         <input type="radio" name="box-shadow" id="box-shadow-x20-inset">
@@ -368,7 +394,7 @@
 
         <!-- box-shadow-color -->
         <div>
-            <h3>박스 바깥쪽 그림자의 색을 설정합니다.</h3>
+            <h3>바깥쪽 그림자의 색을 설정합니다.</h3>
         </div>
 
         <input type="radio" name="box-shadow" id="box-shadow-color-palevioletred">
@@ -404,7 +430,7 @@
         <!-- box-shadow-inset-color -->
 
         <div>
-            <h3>박스 안쪽 그림자의 색을 설정합니다.</h3>
+            <h3>안쪽 그림자의 색을 설정합니다.</h3>
         </div>
 
         <input type="radio" name="box-shadow" id="box-shadow-color-inset-palevioletred">
