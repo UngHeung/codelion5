@@ -1,14 +1,14 @@
 /* font-size */
 #font-size-14:checked~.preview-text {
-    font-size: 14px;
+    font-size: 30px;
 }
 
 #font-size-18:checked~.preview-text {
-    font-size: 18px;
+    font-size: 90px;
 }
 
 #font-size-22:checked~.preview-text {
-    font-size: 22px;
+    font-size: 180px;
 }
 
 /* font-weight */
@@ -29,6 +29,10 @@
 }
 
 /* color */
+#font-color-palevioletred:checked~.preview-text {
+    color: black;
+}
+
 #font-color-palevioletred:checked~.preview-text {
     color: palevioletred;
 }
@@ -51,4 +55,86 @@
 
 #font-color-orangered:checked~.preview-text {
     color: orangered;
+}
+
+/* text-shadow */
+/* x, y */
+#text-shadow-none:checked~.preview-text {
+    text-shadow: none;
+}
+
+#text-shadow-basic:checked~.preview-text {
+    text-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#text-shadow-x20:checked~.preview-text {
+    text-shadow: 20px 0 black;
+}
+
+#text-shadow-x40:checked~.preview-text {
+    text-shadow: 40px 0 black;
+}
+
+#text-shadow-y20:checked~.preview-text {
+    text-shadow: 0 20px black;
+}
+
+#text-shadow-y40:checked~.preview-text {
+    text-shadow: 0 40px black;
+}
+
+#text-shadow-xy20:checked~.preview-text {
+    text-shadow: 20px 20px black;
+}
+
+#text-shadow-xy40:checked~.preview-text {
+    text-shadow: 40px 40px black;
+}
+
+/* text-shadow */
+/* blur, spread */
+#text-shadow-blur10:checked~.preview-text {
+    text-shadow: 20px 20px 10px black;
+}
+
+#text-shadow-blur30:checked~.preview-text {
+    text-shadow: 20px 20px 30px black;
+}
+
+#text-shadow-blur50:checked~.preview-text {
+    text-shadow: 20px 20px 50px black;
+}
+
+/* text-shadow */
+/* color */
+#text-shadow-color-black:checked~.preview-text {
+    text-shadow: 10px 10px black;
+}
+
+#text-shadow-color-palevioletred:checked~.preview-text {
+    text-shadow: 10px 10px palevioletred;
+}
+
+#text-shadow-color-royalblue:checked~.preview-text {
+    text-shadow: 10px 10px royalblue;
+}
+
+#text-shadow-color-gold:checked~.preview-text {
+    text-shadow: 10px 10px gold;
+}
+
+#text-shadow-color-rebeccapurple:checked~.preview-text {
+    text-shadow: 10px 10px rebeccapurple;
+}
+
+#text-shadow-color-greenyellow:checked~.preview-text {
+    text-shadow: 10px 10px greenyellow;
+}
+
+#text-shadow-color-orangered:checked~.preview-text {
+    text-shadow: 10px 10px orangered;
+}
+
+#text-style:checked~.preview-text {
+    font-style: italic;
 }
