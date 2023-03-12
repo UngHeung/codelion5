@@ -41,7 +41,7 @@ a {
     text-decoration: none;
 }
 
-a:hover::after {
+nav a:hover::after {
     position: absolute;
     margin-left: 3px;
 
@@ -125,13 +125,51 @@ code:not(h2>code) {
     filter: brightness(90%);
 }
 
-.wrap>input {
+.wrap input {
     display: none;
 }
 
 .wrap>input:checked+label>code {
     background-color: #ebebeb;
     color: #333333;
+}
+
+/* controller */
+.controller {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+
+    width: 100px;
+
+    border-radius: 5px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.controller>label {
+    margin-bottom: 5px;
+}
+
+.controller>label,
+.controller>a {
+    display: block;
+
+    background-color: #333;
+    border-radius: 5px;
+
+    font-size: 12px;
+    color: #fff;
+
+    /* transition: background-color, color .3s, .3s; */
+
+    cursor: pointer;
+}
+
+.controller>label:hover,
+.controller>a:hover {
+    filter: brightness(90%);
 }
 
 /* animation */
