@@ -1,3 +1,22 @@
+/* preview */
+/* box */
+.preview-box {
+    position: fixed;
+    top: 115px;
+    right: 5%;
+
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+
+    margin: 20px auto;
+
+    color: #fff;
+
+    transition: .5s;
+    z-index: -99;
+}
+
 /* width */
 #box-width-100:checked~.preview-box {
     width: 100px;

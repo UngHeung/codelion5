@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 스타일</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/css_text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,300;0,600;0,900;1,100;1,300;1,600;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>텍스트 스타일 PUZZLE</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">메인으로</a></li>
+                <li><a href="css_box.html">박스 스타일</a></li>
+                <li><a href="css_text.html">텍스트 스타일</a></li>
+                <li><a href="css_gap.html">간격 스타일</a></li>
+                <li><a href="css_transform.html">변형 스타일</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <form class="wrap">
+            <!-- controller -->
+            <article class="controller">
+                <input type="reset" id="reset-button">
+                <label for="reset-button">초기화</label>
+
+                <input type="button" id="move-top">
+                <a href="#" target="_top">위로</a>
+            </article>
+            <!-- font-size -->
+            <div>
+                <h2><code>font-size: </code></h2>
+                <h3>크기를 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="size" id="font-size-14" checked>
+            <label for="font-size-14">
+                <code>14px;</code>
+            </label>
+
+            <input type="radio" name="size" id="font-size-18">
+            <label for="font-size-18">
+                <code>42px;</code>
+            </label>
+
+            <input type="radio" name="size" id="font-size-22">
+            <label for="font-size-22">
+                <code>84px;</code>
+            </label>
+
+            <!-- font-style -->
+            <div>
+                <h2><code>font-style: </code></h2>
+                <h3>폰트의 스타일을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="text-style" id="text-style-normal" checked>
+            <label for="text-style-normal">
+                <code>normal;</code>
+            </label>
+
+            <input type="radio" name="text-style" id="text-style-italic">
+            <label for="text-style-italic">
+                <code>italic;</code>
+            </label>
+
+            <input type="radio" name="text-style" id="text-style-oblique">
+            <label for="text-style-oblique">
+                <code>oblique;</code>
+            </label>
+
+            <!-- font-weight -->
+            <div>
+                <h2><code>font-weight: </code></h2>
+                <h3>두께를 설정합니다. 폰트에 따라 두께 설정이 다를 수 있습니다.</h3>
+            </div>
+
+            <input type="radio" name="weight" id="font-weight-100" checked>
+            <label for="font-weight-100">
+                <code>100;</code>
+            </label>
+
+            <input type="radio" name="weight" id="font-weight-300">
+            <label for="font-weight-300">
+                <code>300;</code>
+            </label>
+
+            <input type="radio" name="weight" id="font-weight-600">
+            <label for="font-weight-600">
+                <code>600;</code>
+            </label>
+
+            <input type="radio" name="weight" id="font-weight-900">
+            <label for="font-weight-900">
+                <code>900;</code>
+            </label>
+
+            <!-- color -->
+            <div>
+                <h2><code>color: </code></h2>
+                <h3>텍스트의 색을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="color" id="font-color-black" checked>
+            <label for="font-color-black">
+                <code>black;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-palevioletred">
+            <label for="font-color-palevioletred">
+                <code>palevioletred;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-royalblue">
+            <label for="font-color-royalblue">
+                <code>royalblue;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-gold">
+            <label for="font-color-gold">
+                <code>gold;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-rebeccapurple">
+            <label for="font-color-rebeccapurple">
+                <code>rebeccapurple;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-greenyellow">
+            <label for="font-color-greenyellow">
+                <code>greenyellow;</code>
+            </label>
+
+            <input type="radio" name="color" id="font-color-orangered">
+            <label for="font-color-orangered">
+                <code>orangered;</code>
+            </label>
+
+            <!-- text-shadow -->
+            <div>
+                <h2><code>text-shadow: </code></h2>
+                <h3>텍스트의 그림자를 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="text-shadow" id="text-shadow-none" checked>
+            <label for="text-shadow-none">
+                <code>none;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-x20">
+            <label for="text-shadow-x20">
+                <code>20px 0 black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-x40">
+            <label for="text-shadow-x40">
+                <code>40px 0 black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-y20">
+            <label for="text-shadow-y20">
+                <code>0 20px black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-y40">
+            <label for="text-shadow-y40">
+                <code>0 40px black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-xy20">
+            <label for="text-shadow-xy20">
+                <code>20px 20px black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-xy40">
+            <label for="text-shadow-xy40">
+                <code>40px 40px black;</code>
+            </label>
+
+            <div>
+                <h3>세번째 값은 blur 값을 조절할 수 있습니다.</h3>
+            </div>
+
+            <input type="radio" name="text-shadow" id="text-shadow-blur10">
+            <label for="text-shadow-blur10">
+                <code>20px 20px 10px black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-blur50">
+            <label for="text-shadow-blur50">
+                <code>20px 20px 50px black;</code>
+            </label>
+
+            <!-- text-shadow-color -->
+            <div>
+                <h2><code>text-shadow: </code></h2>
+                <h3>그림자의 색을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-black">
+            <label for="text-shadow-color-black">
+                <code>10px 10px black;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-palevioletred">
+            <label for="text-shadow-color-palevioletred">
+                <code>10px 10px palevioletred;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-royalblue">
+            <label for="text-shadow-color-royalblue">
+                <code>10px 10px royalblue;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-gold">
+            <label for="text-shadow-color-gold">
+                <code>10px 10px gold;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-rebeccapurple">
+            <label for="text-shadow-color-rebeccapurple">
+                <code>10px 10px rebeccapurple;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-greenyellow">
+            <label for="text-shadow-color-greenyellow">
+                <code>10px 10px greenyellow;</code>
+            </label>
+
+            <input type="radio" name="text-shadow" id="text-shadow-color-orangered">
+            <label for="text-shadow-color-orangered">
+                <code>10px 10px orangered;</code>
+            </label>
+
+            <!-- text-transform -->
+            <div>
+                <h2><code>text-transform: </code></h2>
+                <h3>영문자의 대, 소문자를 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="text-transform" id="text-transform-capitalize" checked>
+            <label for="text-transform-capitalize">
+                <code>capitalize;</code>
+            </label>
+
+            <input type="radio" name="text-transform" id="text-transform-lowercase">
+            <label for="text-transform-lowercase">
+                <code>lowercase;</code>
+            </label>
+
+            <input type="radio" name="text-transform" id="text-transform-uppercase">
+            <label for="text-transform-uppercase">
+                <code>uppercase;</code>
+            </label>
+
+            <p class="preview-text">ungHeung!!</p>
+        </form>
+    </section>
+</body>
+
+</html>
+
+<!--
+    text-style
+    text-align
+    line-height
+    text-decoration
+-->
