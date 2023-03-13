@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 스타일</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/css_gap.css">
+</head>
+
+<body>
+    <header>
+        <h1>박스 스타일 PUZZLE</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">메인으로</a></li>
+                <li><a href="css_box.html">박스 스타일</a></li>
+                <li><a href="css_text.html">텍스트 스타일</a></li>
+                <li><a href="css_gap.html">간격 스타일</a></li>
+                <li><a href="css_transform.html">변형 스타일</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <form class="wrap">
+            <!-- controller -->
+            <article class="controller">
+                <input type="reset" id="reset-button">
+                <label for="reset-button">초기화</label>
+
+                <input type="button" id="move-top">
+                <a href="#" target="_top">위로</a>
+            </article>
+
+            <!-- margin -->
+            <div>
+                <h2><code>margin: </code></h2>
+                <h3>바깥 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-margin-0" checked>
+            <label for="box-margin-0">
+                <code>0px;</code>
+            </label>
+
+            <input type="radio" name="margin-padding" id="box-margin-20">
+            <label for="box-margin-20">
+                <code>20px;</code>
+            </label>
+
+            <!-- margin-direction -->
+            <div>
+                <h2><code>margin-top: </code></h2>
+                <h3>바깥 위쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-margin-top-40">
+            <label for="box-margin-top-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>margin-right: </code></h2>
+                <h3>바깥 오른쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-margin-right-40">
+            <label for="box-margin-right-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>margin-bottom: </code></h2>
+                <h3>바깥 아래쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-margin-bottom-40">
+            <label for="box-margin-bottom-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>margin-left: </code></h2>
+                <h3>바깥 왼쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-margin-left-40">
+            <label for="box-margin-left-40">
+                <code>40px;</code>
+            </label>
+
+            <!-- padding -->
+            <div>
+                <h2><code>padding: </code></h2>
+                <h3>바깥 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-padding-0" checked>
+            <label for="box-padding-0">
+                <code>0px;</code>
+            </label>
+
+            <input type="radio" name="margin-padding" id="box-padding-20">
+            <label for="box-padding-20">
+                <code>20px;</code>
+            </label>
+
+
+            <!-- padding-direction -->
+            <div>
+                <h2><code>padding-top: </code></h2>
+                <h3>바깥 위쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-padding-top-40">
+            <label for="box-padding-top-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>padding-right: </code></h2>
+                <h3>바깥 오른쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-padding-right-40">
+            <label for="box-padding-right-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>padding-bottom: </code></h2>
+                <h3>바깥 아래쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-padding-bottom-40">
+            <label for="box-padding-bottom-40">
+                <code>40px;</code>
+            </label>
+
+            <div>
+                <h2><code>padding-left: </code></h2>
+                <h3>바깥 왼쪽 간격을 설정합니다.</h3>
+            </div>
+
+            <input type="radio" name="margin-padding" id="box-padding-left-40">
+            <label for="box-padding-left-40">
+                <code>40px;</code>
+            </label>
+
+
+            <!-- preview-box -->
+            <box class="box-wrap">
+                <div class="box-top"></div>
+                <div class="box-left"></div>
+                <div class="box-center"></div>
+                <div class="box-right"></div>
+                <div class="box-bottom"></div>
+            </box>
+        </form>
+    </section>
+</body>
+
+</html>
+
+<!--
+    border in out center    
+-->
