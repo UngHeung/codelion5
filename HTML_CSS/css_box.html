@@ -27,14 +27,7 @@
     </header>
     <section>
         <form class="wrap">
-            <!-- controller -->
-            <article class="controller">
-                <input type="reset" id="reset-button">
-                <label for="reset-button">초기화</label>
 
-                <input type="button" id="move-top">
-                <a href="#" target="_top">위로</a>
-            </article>
             <!-- width -->
             <div>
                 <h2><code>width: </code></h2>
@@ -353,7 +346,7 @@
 
             <!-- outline-color -->
             <div>
-                <h2><code>border-color: </code></h2>
+                <h2><code>outline-color: </code></h2>
                 <h3>외곽선 색을 설정합니다. <strong>외곽선이 없으면 적용되지 않습니다!</strong></h3>
             </div>
 
@@ -604,6 +597,36 @@
 
             <!-- preview-box -->
             <div class="preview-box"></div>
+
+            <!-- preview-code -->
+            <footer>
+                <div class="controller">
+                    <h3>code</h3>
+                    <input type="reset" id="reset-button">
+                    <label for="reset-button">초기화</label>
+
+                    <input type="button" id="move-top">
+                    <a href="#" target="_top">위로</a>
+                </div>
+
+                <div class="preview-code">
+                    <p>selector {</p>
+                    <pre class="change-code width">   <p>width: </p>;</pre>
+                    <pre class="change-code height">   <p>height: </p>;</pre>
+                    <pre class="change-code background-color">   <p>background-color: </p>;</pre>
+                    <pre class="change-code border-radius">   <p>border-radius: </p>;</pre>
+                    <pre class="change-code border-style">   <p>border-style: </p>;</pre>
+                    <pre class="change-code border-width">   <p>border-width: </p>;</pre>
+                    <pre class="change-code border-color">   <p>border-color: </p>;</pre>
+                    <pre class="change-code box-sizing">   <p>box-sizing: </p>;</pre>
+                    <pre class="change-code outline-style">   <p>outline-style: </p>;</pre>
+                    <pre class="change-code outline-offset">   <p>outline-offset: </p>;</pre>
+                    <pre class="change-code outline-width">   <p>outline-width: </p>;</pre>
+                    <pre class="change-code outline-color">   <p>outline-color: </p>;</pre>
+                    <pre class="change-code box-shadow">   <p>box-shadow: </p>;</pre>
+                    <p>}</p>
+                </div>
+            </footer>
         </form>
     </section>
 </body>

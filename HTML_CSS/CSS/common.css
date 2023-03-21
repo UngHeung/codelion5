@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -64,7 +66,7 @@ h2:first-child {
     margin-top: 30px;
 }
 
-h3 {
+h3:not(.controller>h3) {
     display: inline-block;
     background-color: #ebebeb;
     border-radius: 5px;
@@ -106,6 +108,10 @@ code:not(h2>code) {
     background-color: #333;
 }
 
+::-webkit-scrollbar-button {
+    display: none;
+}
+
 .wrap {
     position: relative;
     margin: 15px;
@@ -134,29 +140,99 @@ code:not(h2>code) {
     color: #333333;
 }
 
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 100vw;
+    height: 200px;
+    padding: 20px;
+    margin-left: -15px;
+
+    background-color: #333;
+}
+
+footer>section {
+    width: aut;
+    margin: 0 auto;
+}
+
+/* code */
+.preview-code {
+    position: fixed;
+    bottom: 50px;
+
+    width: 500px;
+    height: 100px;
+    padding: 10px 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 1.2em;
+}
+
+.preview-code::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.preview-code::-webkit-scrollbar-button {
+    border-radius: 5px;
+}
+
+.change-code>p {
+    display: inline-block;
+    color: #fcff68;
+}
+
+.change-code>p::after {
+    color: #72adf1;
+}
+
 /* controller */
 .controller {
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
 
-    width: 100px;
+    width: 540px;
+    height: 30px;
 
+    border: 2px solid #fff;
     border-radius: 5px;
 
     text-align: center;
-    line-height: 30px;
+    line-height: 31px;
+
+    z-index: 1;
+}
+
+.controller>h3 {
+    margin: 0 250px 0 0;
+    background-color: transparent;
+    color: #fff;
 }
 
 .controller>label {
     margin-bottom: 5px;
+    clear: both;
 }
 
 .controller>label,
 .controller>a {
-    display: block;
+    display: inline-block;
 
-    background-color: #333;
     border-radius: 5px;
 
     font-size: 12px;
