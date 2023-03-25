@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위니브</title>
+</head>
+<!-- font spoqa han sans -->
+<link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+<!-- style sheet -->
+<link rel="stylesheet" href="css/sign.css">
+
+<body>
+    <h1>로그인, 회원가입 페이지</h1>
+    <!-- sign in, sign up -->
+    <section class="sign-wrap">
+        <h2>로그인 또는 회원가입</h2>
+        <p>위니브에서 여러분의 궁금증을 해결하세요!:)</p>
+        <form action="">
+            <!-- input user info -->
+            <section class="input-wrap">
+                <input type="text" placeholder="아이디" required>
+                <span>아이디를 입력해 주세요.</span>
+                <input type="password" placeholder="비밀번호" required>
+                <span>아이디 혹은 비밀번호가 일치하지 않습니다.</span>
+                <input type="checkbox" id="remember-user" class="remember-chkbox">
+                <label for="remember-user" class="remember-label">로그인 상태 유지</label>
+            </section>
+            <!-- sign-in button, sign-up, find pw link -->
+            <section class="button-wrap">
+                <input type="submit" value="로그인" class="in-btn">
+                <ul>
+                    <li class="up-link"><a href="#">회원가입</a></li>
+                    <li class="find-link"><a href="#">아이디/비밀번호 찾기</a></li>
+                </ul>
+            </section>
+        </form>
+        <!-- sns sign-in link -->
+        <section class="sns-wrap">
+            <p>또는</p>
+            <ul>
+                <li class="sns-google"><a href="#">구글 계정으로 로그인</a></li>
+                <li class="sns-facebook"><a href="#">페이스북 계정으로 로그인</a></li>
+                <li class="sns-naver"><a href="#">네이버 계정으로 로그인</a></li>
+                <li class="sns-kakao"><a href="#">카카오톡 계정으로 로그인</a></li>
+            </ul>
+        </section>
+    </section>
+</body>
+
+</html>
